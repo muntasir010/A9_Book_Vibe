@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
     const { image, bookName, author, rating, category, tags } = book;
