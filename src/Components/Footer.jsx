@@ -2,7 +2,7 @@ import logo from '../assets/images.jpeg';
 
 const Footer = () => {
     return (
-        <div className="">
+        <div className="mt-20">
             <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800">
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0 ">
                     <div className="max-w-7xl mx-auto">

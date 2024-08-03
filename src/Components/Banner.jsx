@@ -7,7 +7,7 @@ const Banner = () => {
                 <img className='max-w-sm' src='https://i.ibb.co/wNB6SP3/To-Kill-a-Mockingbird.jpg' alt="" />
                 <div className="max-w-xl space-y-6">
                     <h1 className="text-3xl md:text-6xl font-bold">Books to freshen up your bookshelf</h1>
-                    <Link className="btn bg-[#23BE0A] text-white">View The List</Link>
+                    <Link to='/pagesToRead' className="btn bg-[#23BE0A] text-white">View The List</Link>
                 </div>
             </div>
         </div>
