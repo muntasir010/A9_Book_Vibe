@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
-    const { image, bookName, author, rating, category, tags } = book;
+    const { id, image, bookName, author, rating, category, tags } = book;
     return (
-        <div className="card border-2 p-4">
+        <Link to={`/book/${id}`} className="card border-2 p-4">
             <figure className='bg-base-200 rounded-xl'>
                 <img className='h-56 p-6'
                     src={image}
@@ -12,8 +13,8 @@ const Book = ({ book }) => {
             </figure>
             <div className="card-body">
                 <div className='flex justify-between'>
-                    <a href='/' className=' border-2 px-5 py-2 text-green-400 rounded-full'>{tags[0]}</a>
-                    <a href='/' className='border-2 px-5 py-2 text-green-400 rounded-full'>{tags[1]}</a>
+                    <a  className=' border-2 px-5 py-2 text-green-400 rounded-full'>{tags[0]}</a>
+                    <a className='border-2 px-5 py-2 text-green-400 rounded-full'>{tags[1]}</a>
                 </div>
                 <h2 className="text-2xl font-semibold">{bookName}</h2>
                 <p className='font-medium text-gray-500'>By: {author}</p>
@@ -24,7 +25,7 @@ const Book = ({ book }) => {
                     <h4 className='font-medium text-gray-500 flex gap-3 items-center'>{rating} <span><FaStar/></span></h4>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
